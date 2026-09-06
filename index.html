@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Линия Данных - digital-студия для курса веб-аналитики</title>
+  <meta name="description" content="Учебный многостраничный сайт небольшой digital-студии, подготовленный для лабораторных работ по веб-аналитике.">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- YANDEX_METRICA_PLACEHOLDER_START -->
+  <!-- Здесь позже будет размещен основной код счетчика Яндекс.Метрики. -->
+  <!-- YANDEX_METRICA_PLACEHOLDER_END -->
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Линия Данных, на главную">
+        <span class="brand-mark" aria-hidden="true">ЛД</span>
+        <span class="brand-text">
+          <span>Линия Данных</span>
+          <span class="brand-subtitle">digital/web-студия</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-menu-toggle aria-controls="siteNav" aria-expanded="false" aria-label="Открыть меню">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html" aria-current="page">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="projects.html">Проекты</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="about.html">О студии</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Сайты, метрики, понятные решения</p>
+          <h1>Линия Данных</h1>
+          <p class="lead">Мы проектируем спокойные сайты для малого бизнеса и сразу закладываем в них основу для честной аналитики: цели, события, формы, ссылки, скачивания и сценарии переходов между страницами.</p>
+          <div class="actions">
+            <a class="button button-primary" id="cta-home-services" data-analytics-event="cta_click" data-cta-id="home_services" href="services.html">Посмотреть услуги</a>
+            <a class="button button-secondary" id="cta-home-contact" data-analytics-event="cta_click" data-cta-id="home_contact" href="contacts.html">Обсудить проект</a>
+          </div>
+          <div class="pill-row" aria-label="Ключевые направления">
+            <span class="pill">HTML5 и CSS3</span>
+            <span class="pill">События аналитики</span>
+            <span class="pill">GitHub Pages</span>
+            <span class="pill">Доступность</span>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/images/studio-workspace.png" alt="Рабочий стол digital-студии с ноутбуком и панелью веб-аналитики">
+          <figcaption class="hero-note">
+            <strong>Сайт готов для лабораторных работ.</strong>
+            Каждая важная кнопка и ссылка имеет понятный аналитический маркер.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="home-services-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Что делаем</p>
+          <h2 id="home-services-title">Небольшая студия с аналитикой в основании</h2>
+          <p>Мы не усложняем там, где достаточно статического сайта, но заранее проектируем поведение посетителей так, чтобы его можно было измерить в LiveInternet, Rambler/Top-100, Рейтинге Mail.ru и Яндекс.Метрике.</p>
+        </div>
+        <div class="grid grid-4">
+          <a class="card service-card" id="service-card-site" data-analytics-event="service_click" data-service-id="site_development" href="services.html#site-development">
+            <span class="tag">Сайты</span>
+            <h3>Корпоративные страницы</h3>
+            <p>Структура, тексты, формы и навигация для небольших компаний, которым нужен аккуратный публичный сайт без лишней технической нагрузки.</p>
+            <span class="card-link">Подробнее</span>
+          </a>
+          <a class="card service-card" id="service-card-analytics" data-analytics-event="service_click" data-service-id="analytics_setup" href="services.html#analytics-setup">
+            <span class="tag">Аналитика</span>
+            <h3>Карта событий</h3>
+            <p>CTA, клики по карточкам, внешние переходы, отправки форм и глубина скроллинга описываются до подключения счетчиков.</p>
+            <span class="card-link">Подробнее</span>
+          </a>
+          <a class="card service-card" id="service-card-content" data-analytics-event="service_click" data-service-id="content_design" href="services.html#content-design">
+            <span class="tag">Контент</span>
+            <h3>Тексты без заглушек</h3>
+            <p>Пишем страницы так, чтобы они читались как реальный сайт, а не как набор учебных блоков с одинаковым наполнением.</p>
+            <span class="card-link">Подробнее</span>
+          </a>
+          <a class="card service-card" id="service-card-audit" data-analytics-event="service_click" data-service-id="audit" href="services.html#audit">
+            <span class="tag">Аудит</span>
+            <h3>Проверка готовности</h3>
+            <p>Смотрим, работают ли переходы, форма, скачивание файла, адаптивность и базовая доступность до публикации.</p>
+            <span class="card-link">Подробнее</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="home-projects-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Кейсы</p>
+          <h2 id="home-projects-title">Маршруты, которые удобно анализировать</h2>
+          <p>На сайте есть несколько типов пользовательского поведения: просмотр услуг, чтение длинной статьи, переход к форме, скачивание брифа и внешний переход к документации.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="card project-card" id="project-card-atelier" data-analytics-event="project_click" data-project-id="atelier_site" href="projects.html#atelier">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-toolbar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+                <div class="mock-chart"><div class="mock-bars"><span></span><span></span><span></span><span></span></div><div class="mock-lines"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="tag">Локальный бренд</span>
+              <h3>Сайт мастерской мебели</h3>
+              <p>Сделали понятный путь от карточки проекта к форме заявки и отдельную цель для скачивания каталога.</p>
+              <span class="card-link">Открыть кейс</span>
+            </div>
+          </a>
+          <a class="card project-card" id="project-card-school" data-analytics-event="project_click" data-project-id="school_landing" href="projects.html#school">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-toolbar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+                <div class="mock-chart"><div class="mock-bars"><span></span><span></span><span></span><span></span></div><div class="mock-lines"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="tag">Образование</span>
+              <h3>Лендинг курса дизайна</h3>
+              <p>Разделили интерес к программе, клики по тарифам и отправку формы на разные аналитические события.</p>
+              <span class="card-link">Открыть кейс</span>
+            </div>
+          </a>
+          <a class="card project-card" id="project-card-clinic" data-analytics-event="project_click" data-project-id="clinic_content" href="projects.html#clinic">
+            <div class="project-visual" aria-hidden="true">
+              <div class="mock-window">
+                <div class="mock-toolbar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+                <div class="mock-chart"><div class="mock-bars"><span></span><span></span><span></span><span></span></div><div class="mock-lines"><span></span><span></span><span></span></div></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="tag">Контент</span>
+              <h3>Раздел статей для клиники</h3>
+              <p>Подготовили длинные материалы, якоря и события глубины скроллинга для оценки вовлеченности.</p>
+              <span class="card-link">Открыть кейс</span>
+            </div>
+          </a>
+        </div>
+        <div class="actions">
+          <a class="button button-primary" id="cta-home-projects" data-analytics-event="cta_click" data-cta-id="home_projects" href="projects.html">Все проекты</a>
+          <a class="button button-secondary" id="download-brief-home" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="home-numbers-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Для лабораторных</p>
+          <h2 id="home-numbers-title">На сайте есть измеримые действия</h2>
+          <p>Эти блоки помогают студентам увидеть, как разные типы пользовательских действий превращаются в события и цели.</p>
+        </div>
+        <div class="metric-strip" aria-label="Сводка измеряемых элементов сайта">
+          <div class="metric"><strong>9</strong><span>HTML-страниц с общей навигацией</span></div>
+          <div class="metric"><strong>9</strong><span>типов событий в едином слое аналитики</span></div>
+          <div class="metric"><strong>3</strong><span>поля в настоящей форме обращения</span></div>
+          <div class="metric"><strong>2</strong><span>порога скроллинга для длинной статьи</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="home-faq-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="home-faq-title">Частые вопросы</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Почему сайт сделан без фреймворков?</summary>
+            <p>Для лабораторных работ важна прозрачная структура: обычные HTML-страницы, понятные ссылки, простая форма и JavaScript без сборки. Так легче увидеть, где именно возникает событие.</p>
+          </details>
+          <details>
+            <summary>Можно ли позже подключить реальные счетчики?</summary>
+            <p>Да. В каждом HTML-файле оставлены размеченные места для LiveInternet, Rambler/Top-100, Рейтинга Mail.ru, Яндекс.Метрики и информера.</p>
+          </details>
+          <details>
+            <summary>Будет ли сайт работать в подпапке GitHub Pages?</summary>
+            <p>Да. Все внутренние ссылки и пути к файлам относительные, поэтому проект можно публиковать по адресу вида <span lang="en">/web-analytics-lab/</span>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="Линия Данных, на главную">
+            <span class="brand-mark" aria-hidden="true">ЛД</span>
+            <span class="brand-text">
+              <span>Линия Данных</span>
+              <span class="brand-subtitle">digital/web-студия</span>
+            </span>
+          </a>
+          <p class="footer-bottom">Учебный сайт для курса «Веб-аналитика».</p>
+        </div>
+        <nav aria-label="Разделы в подвале">
+          <ul class="footer-links">
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p>Полезные действия для аналитики:</p>
+          <ul class="footer-links">
+            <li><a id="download-brief-footer" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a></li>
+            <li><a id="external-yandex-docs" data-analytics-event="external_link" href="https://yandex.ru/support/metrica/" target="_blank" rel="noopener">Документация Яндекс.Метрики</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="counter-area" aria-label="Места для будущих счетчиков и информеров">
+        <p>Места для видимых информеров и изображений счетчиков:</p>
+        <div class="counter-grid">
+          <div class="counter-slot"><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_START -->LiveInternet<!-- LIVEINTERNET_COUNTER_PLACEHOLDER_END --></div>
+          <div class="counter-slot"><!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_START -->Rambler Top100<!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_END --></div>
+          <div class="counter-slot"><!-- MAILRU_RATING_COUNTER_PLACEHOLDER_START -->Рейтинг Mail.ru<!-- MAILRU_RATING_COUNTER_PLACEHOLDER_END --></div>
+          <div class="counter-slot"><!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_START -->Информер Метрики<!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_END --></div>
+          <div class="counter-slot"><!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_START -->Метрика noscript<!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_END --></div>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 Линия Данных. Статический учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/analytics.js"></script>
+</body>
+</html>
