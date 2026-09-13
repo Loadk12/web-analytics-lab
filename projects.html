@@ -11,6 +11,38 @@
   <!-- YANDEX_METRICA_PLACEHOLDER_END -->
 </head>
 <body>
+  <!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_START -->
+<!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7752492,
+            attributes_dataset: [ "Rambler" ],
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=7752492" alt="Топ-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+  <!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_END -->
   <a class="skip-link" href="#main">К основному содержанию</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -37,15 +69,15 @@
           <p class="lead">Мы показываем проекты не как витрину красивых экранов, а как набор измеримых решений: какие страницы связаны между собой, где размещены призывы к действию и какие события помогают понять поведение посетителя.</p>
         </div>
         <div class="grid grid-3">
-          <a class="card project-card" id="project-atelier-card" data-analytics-event="project_click" data-project-id="atelier_site" href="#atelier">
+          <a class="card project-card" id="project-atelier-card" data-rambler="проекты::карточки::мастерская мебели" data-analytics-event="project_click" data-project-id="atelier_site" href="#atelier">
             <div class="project-visual" aria-hidden="true"><div class="mock-window"><div class="mock-toolbar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div><div class="mock-chart"><div class="mock-bars"><span></span><span></span><span></span><span></span></div><div class="mock-lines"><span></span><span></span><span></span></div></div></div></div>
             <div class="project-body"><span class="tag">Мастерская</span><h3>Сайт мебели на заказ</h3><p>Каталог, форма заявки и отдельный файл с брифом для первичного обращения.</p><span class="card-link">К описанию</span></div>
           </a>
-          <a class="card project-card" id="project-school-card" data-analytics-event="project_click" data-project-id="school_landing" href="#school">
+          <a class="card project-card" id="project-school-card" data-rambler="проекты::карточки::курс дизайна" data-analytics-event="project_click" data-project-id="school_landing" href="#school">
             <div class="project-visual" aria-hidden="true"><div class="mock-window"><div class="mock-toolbar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div><div class="mock-chart"><div class="mock-bars"><span></span><span></span><span></span><span></span></div><div class="mock-lines"><span></span><span></span><span></span></div></div></div></div>
             <div class="project-body"><span class="tag">Образование</span><h3>Лендинг курса дизайна</h3><p>Страница с несколькими CTA и понятной цепочкой перехода к контактам.</p><span class="card-link">К описанию</span></div>
           </a>
-          <a class="card project-card" id="project-clinic-card" data-analytics-event="project_click" data-project-id="clinic_content" href="#clinic">
+          <a class="card project-card" id="project-clinic-card" data-rambler="проекты::карточки::раздел статей" data-analytics-event="project_click" data-project-id="clinic_content" href="#clinic">
             <div class="project-visual" aria-hidden="true"><div class="mock-window"><div class="mock-toolbar"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div><div class="mock-chart"><div class="mock-bars"><span></span><span></span><span></span><span></span></div><div class="mock-lines"><span></span><span></span><span></span></div></div></div></div>
             <div class="project-body"><span class="tag">Статьи</span><h3>Контентный раздел клиники</h3><p>Длинные материалы с якорями, которые показывают вовлеченность чтения.</p><span class="card-link">К описанию</span></div>
           </a>
@@ -61,8 +93,8 @@
           <p>Мастерская хотела получать заявки от людей, которые уже понимают примерный формат заказа. Мы сделали короткий маршрут: главная страница объясняет подход, раздел проектов показывает реальные типы задач, а контактная форма собирает только имя, тему и сообщение.</p>
           <p>Для аналитики особенно важны клики по карточкам проектов, переходы к форме и скачивание PDF-брифа. Такой набор событий помогает отделить живой интерес от случайного просмотра.</p>
           <div class="actions">
-            <a class="button button-primary" id="cta-project-atelier-contact" data-analytics-event="cta_click" data-cta-id="project_atelier_contact" href="contacts.html">Обсудить похожий сайт</a>
-            <a class="button button-secondary" id="project-atelier-article" data-analytics-event="cta_click" data-cta-id="project_atelier_article" href="article.html#forms">Читать про формы</a>
+            <a class="button button-primary" id="cta-project-atelier-contact" data-rambler="проекты::cta::обсудить похожий сайт" data-analytics-event="cta_click" data-cta-id="project_atelier_contact" href="contacts.html">Обсудить похожий сайт</a>
+            <a class="button button-secondary" id="project-atelier-article" data-rambler="проекты::cta::формы" data-analytics-event="cta_click" data-cta-id="project_atelier_article" href="article.html#forms">Читать про формы</a>
           </div>
         </article>
         <article class="card" id="school">
@@ -71,8 +103,8 @@
           <p>Для образовательного проекта важно понять, что именно вызывает доверие: описание программы, примеры работ, блок вопросов или форма записи. Поэтому на лендинге были разделены несколько CTA и добавлены внутренние ссылки к подробному материалу в блоге.</p>
           <p>В отчетах можно сравнивать переходы с разных блоков: один посетитель идет от услуг к контактам, другой сначала открывает статью, третий скачивает бриф и возвращается позднее.</p>
           <div class="actions">
-            <a class="button button-primary" id="cta-project-school-services" data-analytics-event="cta_click" data-cta-id="project_school_services" href="services.html#content-design">Узнать про контент</a>
-            <a class="button button-secondary" id="project-school-blog" data-analytics-event="cta_click" data-cta-id="project_school_blog" href="blog.html">Открыть блог</a>
+            <a class="button button-primary" id="cta-project-school-services" data-rambler="проекты::cta::контент" data-analytics-event="cta_click" data-cta-id="project_school_services" href="services.html#content-design">Узнать про контент</a>
+            <a class="button button-secondary" id="project-school-blog" data-rambler="проекты::cta::блог" data-analytics-event="cta_click" data-cta-id="project_school_blog" href="blog.html">Открыть блог</a>
           </div>
         </article>
         <article class="card" id="clinic">
@@ -81,8 +113,8 @@
           <p>Контентный раздел должен не просто приводить поисковый трафик, а помогать человеку разобраться в теме и перейти к аккуратному обращению. Поэтому статьи получили понятную структуру, якорное содержание и блоки с дальнейшими действиями.</p>
           <p>Для лабораторных такой кейс полезен тем, что можно проверить глубину скроллинга: событие 50% показывает середину чтения, а 90% помогает найти тех, кто почти дошел до конца материала.</p>
           <div class="actions">
-            <a class="button button-primary" id="cta-project-clinic-article" data-analytics-event="cta_click" data-cta-id="project_clinic_article" href="article.html">Прочитать длинную статью</a>
-            <a class="button button-secondary" id="project-clinic-download" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a>
+            <a class="button button-primary" id="cta-project-clinic-article" data-rambler="проекты::cta::длинная статья" data-analytics-event="cta_click" data-cta-id="project_clinic_article" href="article.html">Прочитать длинную статью</a>
+            <a class="button button-secondary" id="project-clinic-download" data-rambler="проекты::cta::pdf-бриф" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a>
           </div>
         </article>
       </div>
@@ -93,8 +125,8 @@
     <div class="container">
       <div class="footer-grid">
         <div><a class="brand" href="index.html" aria-label="Линия Данных, на главную"><span class="brand-mark" aria-hidden="true">ЛД</span><span class="brand-text"><span>Линия Данных</span><span class="brand-subtitle">digital/web-студия</span></span></a><p class="footer-bottom">Учебный сайт для курса «Веб-аналитика».</p></div>
-        <nav aria-label="Разделы в подвале"><ul class="footer-links"><li><a href="services.html">Услуги</a></li><li><a href="projects.html">Проекты</a></li><li><a href="blog.html">Блог</a></li><li><a href="contacts.html">Контакты</a></li></ul></nav>
-        <div><p>Полезные действия для аналитики:</p><ul class="footer-links"><li><a id="download-brief-footer" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a></li><li><a id="external-yandex-docs" data-analytics-event="external_link" href="https://yandex.ru/support/metrica/" target="_blank" rel="noopener">Документация Яндекс.Метрики</a></li></ul></div>
+        <nav aria-label="Разделы в подвале"><ul class="footer-links"><li><a href="services.html" data-rambler="footer::навигация::услуги">Услуги</a></li><li><a href="projects.html" data-rambler="footer::навигация::проекты">Проекты</a></li><li><a href="blog.html" data-rambler="footer::навигация::блог">Блог</a></li><li><a href="contacts.html" data-rambler="footer::навигация::контакты">Контакты</a></li></ul></nav>
+        <div><p>Полезные действия для аналитики:</p><ul class="footer-links"><li><a id="download-brief-footer" data-rambler="footer::навигация::pdf-бриф" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a></li><li><a id="external-yandex-docs" data-rambler="footer::навигация::документация метрики" data-analytics-event="external_link" href="https://yandex.ru/support/metrica/" target="_blank" rel="noopener">Документация Яндекс.Метрики</a></li></ul></div>
       </div>
       <div class="counter-area" aria-label="Места для будущих счетчиков и информеров"><p>Места для видимых информеров и изображений счетчиков:</p><div class="counter-grid"><div class="counter-slot"><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_START --><!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
 target="_blank"><img id="licnt8F85" width="88" height="31" style="border:0"
@@ -105,7 +137,7 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt8F85").src=
 ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
 (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
 ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
-(document,screen)</script><!--/LiveInternet--><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_START -->Rambler Top100<!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- MAILRU_RATING_COUNTER_PLACEHOLDER_START -->Рейтинг Mail.ru<!-- MAILRU_RATING_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_START -->Информер Метрики<!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_START -->Метрика noscript<!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_END --></div></div></div>
+(document,screen)</script><!--/LiveInternet--><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_START -->Информер Метрики<!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_START -->Метрика noscript<!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_END --></div></div></div>
       <p class="footer-bottom">© 2026 Линия Данных. Статический учебный проект.</p>
     </div>
   </footer>

@@ -11,6 +11,38 @@
   <!-- YANDEX_METRICA_PLACEHOLDER_END -->
 </head>
 <body>
+  <!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_START -->
+<!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 7752492,
+            attributes_dataset: [ "Rambler" ],
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript>
+  <img src="//counter.rambler.ru/top100.cnt?pid=7752492" alt="Топ-100" />
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+  <!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_END -->
   <a class="skip-link" href="#main">К основному содержанию</a>
   <header class="site-header">
     <div class="container header-inner">
@@ -50,16 +82,16 @@
           <h2 id="toc-title">Разделы статьи</h2>
           <nav aria-label="Навигация по статье">
             <ul class="toc">
-              <li><a href="#context">Зачем готовить сайт заранее</a></li>
-              <li><a href="#routes">Маршруты посетителя</a></li>
-              <li><a href="#event-map">Карта событий</a></li>
-              <li><a href="#cards">Карточки и CTA</a></li>
-              <li><a href="#forms">Форма обращения</a></li>
-              <li><a href="#scroll-depth">Глубина скроллинга</a></li>
-              <li><a href="#counters">Счетчики и информеры</a></li>
-              <li><a href="#github-pages">GitHub Pages</a></li>
-              <li><a href="#quality-check">Проверка качества</a></li>
-              <li><a href="#summary">Итоги</a></li>
+              <li><a href="#context" data-rambler="статья::оглавление::зачем готовить сайт заранее">Зачем готовить сайт заранее</a></li>
+              <li><a href="#routes" data-rambler="статья::оглавление::маршруты посетителя">Маршруты посетителя</a></li>
+              <li><a href="#event-map" data-rambler="статья::оглавление::карта событий">Карта событий</a></li>
+              <li><a href="#cards" data-rambler="статья::оглавление::карточки и cta">Карточки и CTA</a></li>
+              <li><a href="#forms" data-rambler="статья::оглавление::форма обращения">Форма обращения</a></li>
+              <li><a href="#scroll-depth" data-rambler="статья::оглавление::глубина скроллинга">Глубина скроллинга</a></li>
+              <li><a href="#counters" data-rambler="статья::оглавление::счетчики и информеры">Счетчики и информеры</a></li>
+              <li><a href="#github-pages" data-rambler="статья::оглавление::github pages">GitHub Pages</a></li>
+              <li><a href="#quality-check" data-rambler="статья::оглавление::проверка качества">Проверка качества</a></li>
+              <li><a href="#summary" data-rambler="статья::оглавление::итоги">Итоги</a></li>
             </ul>
           </nav>
         </aside>
@@ -79,7 +111,7 @@
 
           <p>Чтобы маршруты можно было анализировать, внутренние ссылки должны быть не декоративными, а действительно полезными. Из описания услуги стоит вести к релевантному кейсу. Из кейса логично отправлять к форме обращения или статье, где объясняется метод работы. Из блога полезно возвращать пользователя к услугам, потому что человек после чтения может быть готов к практическому действию. В такой структуре каждая страница имеет роль: главная объясняет позиционирование, услуги раскрывают предложения, проекты дают доказательства, статья обучает, контакты завершают маршрут, страница благодарности фиксирует успешную отправку, а 404 помогает не терять человека при ошибочном переходе.</p>
 
-          <p>Для лабораторных работ этот подход особенно удобен. Можно построить несколько сценариев и сравнить их: короткий путь от главной к форме, путь через услуги и проект, путь через блог и длинную статью, путь с внешним переходом к документации. Даже если пока не подключены LiveInternet, Rambler/Top-100, Рейтинг Mail.ru или Яндекс.Метрика, сам сайт уже готов к наблюдению. В консоли браузера видно, какие события возникли, а студент понимает, почему они появились именно в этот момент.</p>
+          <p>Для лабораторных работ этот подход особенно удобен. Можно построить несколько сценариев и сравнить их: короткий путь от главной к форме, путь через услуги и проект, путь через блог и длинную статью, путь с внешним переходом к документации. Даже если пока не подключены LiveInternet, Rambler/Top-100 или Яндекс.Метрика, сам сайт уже готов к наблюдению. В консоли браузера видно, какие события возникли, а студент понимает, почему они появились именно в этот момент.</p>
 
           <h2 id="event-map">Карта событий</h2>
           <p>Карта событий - это список действий, которые сайт считает значимыми. В этом проекте используется единый слой с названиями cta_click, service_click, project_click, download_brief, external_link, form_start, form_submit, scroll_50 и scroll_90. Набор небольшой, но он покрывает основные типы поведения на учебном сайте. Клик по CTA показывает интерес к следующему шагу. Клик по услуге помогает понять, какие направления привлекают внимание. Клик по проекту показывает, какие кейсы работают как доказательство. Скачивание PDF-брифа отделяет спокойный интерес от более практического намерения. Внешняя ссылка показывает уход к дополнительному источнику.</p>
@@ -110,7 +142,7 @@
           <p>Якорные ссылки внутри статьи помогают дополнительно проверять поведение. Если посетитель нажимает на пункт содержания «Форма обращения», страница прокручивается к нужному разделу. После этого событие scroll_50 может возникнуть быстрее, чем при обычном последовательном чтении. Это не ошибка, а хороший повод обсудить интерпретацию данных. Аналитика всегда нуждается в контексте: цифра сама по себе ничего не доказывает, пока мы не понимаем, как устроен интерфейс и какие маршруты он предлагает.</p>
 
           <h2 id="counters">Счетчики и информеры</h2>
-          <p>Сайт подготовлен к будущему подключению нескольких систем: LiveInternet, Rambler/Top-100, Рейтинг Mail.ru, Яндекс.Метрика и информер Яндекс.Метрики. В каждом HTML-файле оставлены явно размеченные места, чтобы студент мог позже вставить код счетчика и не искать подходящий участок страницы наугад. Основной код Яндекс.Метрики обычно добавляют в head или рядом с началом body, а видимые информеры и изображения счетчиков логично размещать в подвале. Поэтому в футере есть отдельная область с пунктирными слотами.</p>
+          <p>Сайт подготовлен к будущему подключению нескольких систем: LiveInternet, Rambler/Top-100, Яндекс.Метрика и информер Яндекс.Метрики. В каждом HTML-файле оставлены явно размеченные места, чтобы студент мог позже вставить код счетчика и не искать подходящий участок страницы наугад. Основной код Яндекс.Метрики обычно добавляют в head или рядом с началом body, а видимые информеры и изображения счетчиков логично размещать в подвале. Поэтому в футере есть отдельная область с пунктирными слотами.</p>
 
           <p>Видимые информеры имеют учебную ценность. Они показывают, что счетчик может быть не только невидимым скриптом, но и частью интерфейса. В реальном коммерческом проекте такие элементы используют не всегда: иногда они не подходят дизайну, иногда политика компании требует скрытого счетчика без публичного блока. Но для курса полезно видеть место, куда позже встанет изображение или ссылка рейтинга. Это помогает связать техническую вставку кода с визуальным результатом на странице.</p>
 
@@ -138,9 +170,9 @@
           <p>Дальше можно проводить лабораторную работу: вставлять счетчики, настраивать цели, сравнивать маршруты, смотреть глубину чтения, проверять скачивания и обсуждать, почему одно событие не всегда отвечает на весь аналитический вопрос. Хороший учебный проект оставляет место для исследования. Он не прячет механику, но и не сводит веб-аналитику к сухому списку команд. В нем есть живой интерфейс, понятные действия и достаточно данных, чтобы начать думать как аналитик.</p>
 
           <div class="actions">
-            <a class="button button-primary" id="cta-article-contact" data-analytics-event="cta_click" data-cta-id="article_contact" href="contacts.html">Перейти к форме</a>
-            <a class="button button-secondary" id="download-brief-article" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a>
-            <a class="button button-text" id="cta-article-services" data-analytics-event="cta_click" data-cta-id="article_services" href="services.html">Вернуться к услугам</a>
+            <a class="button button-primary" id="cta-article-contact" data-rambler="статья::cta::форма" data-analytics-event="cta_click" data-cta-id="article_contact" href="contacts.html">Перейти к форме</a>
+            <a class="button button-secondary" id="download-brief-article" data-rambler="статья::cta::pdf-бриф" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a>
+            <a class="button button-text" id="cta-article-services" data-rambler="статья::cta::услуги" data-analytics-event="cta_click" data-cta-id="article_services" href="services.html">Вернуться к услугам</a>
           </div>
         </article>
       </div>
@@ -151,8 +183,8 @@
     <div class="container">
       <div class="footer-grid">
         <div><a class="brand" href="index.html" aria-label="Линия Данных, на главную"><span class="brand-mark" aria-hidden="true">ЛД</span><span class="brand-text"><span>Линия Данных</span><span class="brand-subtitle">digital/web-студия</span></span></a><p class="footer-bottom">Учебный сайт для курса «Веб-аналитика».</p></div>
-        <nav aria-label="Разделы в подвале"><ul class="footer-links"><li><a href="services.html">Услуги</a></li><li><a href="projects.html">Проекты</a></li><li><a href="blog.html">Блог</a></li><li><a href="contacts.html">Контакты</a></li></ul></nav>
-        <div><p>Полезные действия для аналитики:</p><ul class="footer-links"><li><a id="download-brief-footer" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a></li><li><a id="external-yandex-docs" data-analytics-event="external_link" href="https://yandex.ru/support/metrica/" target="_blank" rel="noopener">Документация Яндекс.Метрики</a></li></ul></div>
+        <nav aria-label="Разделы в подвале"><ul class="footer-links"><li><a href="services.html" data-rambler="footer::навигация::услуги">Услуги</a></li><li><a href="projects.html" data-rambler="footer::навигация::проекты">Проекты</a></li><li><a href="blog.html" data-rambler="footer::навигация::блог">Блог</a></li><li><a href="contacts.html" data-rambler="footer::навигация::контакты">Контакты</a></li></ul></nav>
+        <div><p>Полезные действия для аналитики:</p><ul class="footer-links"><li><a id="download-brief-footer" data-rambler="footer::навигация::pdf-бриф" data-analytics-event="download_brief" href="assets/downloads/web-analytics-brief.pdf" download>Скачать PDF-бриф</a></li><li><a id="external-yandex-docs" data-rambler="footer::навигация::документация метрики" data-analytics-event="external_link" href="https://yandex.ru/support/metrica/" target="_blank" rel="noopener">Документация Яндекс.Метрики</a></li></ul></div>
       </div>
       <div class="counter-area" aria-label="Места для будущих счетчиков и информеров"><p>Места для видимых информеров и изображений счетчиков:</p><div class="counter-grid"><div class="counter-slot"><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_START --><!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
 target="_blank"><img id="licnt8F85" width="88" height="31" style="border:0"
@@ -163,7 +195,7 @@ alt=""/></a><script>(function(d,s){d.getElementById("licnt8F85").src=
 ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
 (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
 ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
-(document,screen)</script><!--/LiveInternet--><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_START -->Rambler Top100<!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- MAILRU_RATING_COUNTER_PLACEHOLDER_START -->Рейтинг Mail.ru<!-- MAILRU_RATING_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_START -->Информер Метрики<!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_START -->Метрика noscript<!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_END --></div></div></div>
+(document,screen)</script><!--/LiveInternet--><!-- LIVEINTERNET_COUNTER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_START -->Информер Метрики<!-- YANDEX_METRICA_INFORMER_PLACEHOLDER_END --></div><div class="counter-slot"><!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_START -->Метрика noscript<!-- YANDEX_METRICA_NOSCRIPT_PLACEHOLDER_END --></div></div></div>
       <p class="footer-bottom">© 2026 Линия Данных. Статический учебный проект.</p>
     </div>
   </footer>
