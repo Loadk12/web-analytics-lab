@@ -32,10 +32,9 @@
     window[layerName].push(payload);
     console.info("[analytics]", eventName, payload);
 
-    // Future Yandex Metrica connection point:
-    // if (typeof window.ym === "function") {
-    //   window.ym(YOUR_COUNTER_ID, "reachGoal", eventName, payload);
-    // }
+    if (typeof window.ym === "function") {
+      window.ym(112677581, "reachGoal", eventName);
+    }
   }
 
   window.trackAnalyticsEvent = trackAnalyticsEvent;
@@ -125,14 +124,22 @@
       form.addEventListener("focusin", markStarted);
       form.addEventListener("input", markStarted);
 
-      form.addEventListener("submit", function () {
+      form.addEventListener("submit", function (event) {
+        const action = form.getAttribute("action") || null;
+        const method = form.getAttribute("method") || "get";
+
         trackAnalyticsEvent("form_submit", {
           form_id: form.id || null,
           form_name: form.getAttribute("data-form-name") || null,
-          action: form.getAttribute("action") || null,
-          method: form.getAttribute("method") || "get",
+          action: action,
+          method: method,
           field_count: form.querySelectorAll("input, textarea, select").length
         });
+
+        if (action) {
+          event.preventDefault();
+          window.location.href = action;
+        }
       });
     });
   }
