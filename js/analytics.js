@@ -124,7 +124,7 @@
       form.addEventListener("focusin", markStarted);
       form.addEventListener("input", markStarted);
 
-      form.addEventListener("submit", function (event) {
+      form.addEventListener("submit", function () {
         const action = form.getAttribute("action") || null;
         const method = form.getAttribute("method") || "get";
 
@@ -135,11 +135,6 @@
           method: method,
           field_count: form.querySelectorAll("input, textarea, select").length
         });
-
-        if (action) {
-          event.preventDefault();
-          window.location.href = action;
-        }
       });
     });
   }

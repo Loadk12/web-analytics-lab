@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <script>
+    if (window.location.search === "" && window.location.href.endsWith("?")) {
+      window.history.replaceState(null, document.title, window.location.pathname + window.location.hash);
+    }
+  </script>
   <!-- RAMBLER_TOP100_COUNTER_PLACEHOLDER_START -->
 <!-- Top100 (Kraken) Counter -->
 <script>
