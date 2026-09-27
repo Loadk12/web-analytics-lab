@@ -112,15 +112,15 @@
             <form class="form" id="contact-form" data-analytics-form data-form-name="contact_request" action="thanks.html" method="get">
               <div class="field">
                 <label for="name">Имя</label>
-                <input id="name" type="text" autocomplete="name" required>
+                <input id="name" name="name" type="text" autocomplete="name" required>
               </div>
               <div class="field">
                 <label for="topic">Тема обращения</label>
-                <input id="topic" type="text" required>
+                <input id="topic" name="topic" type="text" required>
               </div>
               <div class="field">
                 <label for="message">Сообщение</label>
-                <textarea id="message" required></textarea>
+                <textarea id="message" name="message" required></textarea>
               </div>
               <p class="hint">Не указывайте пароли, платежные данные и другую чувствительную информацию.</p>
               <button class="button button-primary" id="cta-contact-submit" data-rambler="контакты::форма::отправить" data-analytics-event="cta_click" data-cta-id="contact_submit_button" type="submit">Отправить обращение</button>
